@@ -1,0 +1,2 @@
+github "onevcat/Kingfisher" ~> 5.15.6
+git "git@github.com:schibsted/account-sdk-ios.git"

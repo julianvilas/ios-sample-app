@@ -1,0 +1,11 @@
+framework module SchibstedAccount {
+  umbrella header "SchibstedAccount.h"
+
+  export *
+  module * { export * }
+}
+
+module SchibstedAccount.Swift {
+    header "SchibstedAccount-Swift.h"
+    requires objc
+}
