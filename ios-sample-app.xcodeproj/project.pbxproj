@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		FF8FF1C725658C150018AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8FF1C525658C150018AA82 /* LaunchScreen.storyboard */; };
 		FF8FF1D225658C150018AA82 /* ios_sample_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FF1D125658C150018AA82 /* ios_sample_appTests.swift */; };
 		FF8FF1DD25658C150018AA82 /* ios_sample_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FF1DC25658C150018AA82 /* ios_sample_appUITests.swift */; };
+		FF8FF1F5256597150018AA82 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF8FF1F4256597150018AA82 /* Kingfisher */; };
+		FF8FF1F7256597150018AA82 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FF8FF1F6256597150018AA82 /* KingfisherSwiftUI */; };
+		FF8FF1FD256597830018AA82 /* SchibstedAccount in Frameworks */ = {isa = PBXBuildFile; productRef = FF8FF1FC256597830018AA82 /* SchibstedAccount */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8FF1FD256597830018AA82 /* SchibstedAccount in Frameworks */,
+				FF8FF1F7256597150018AA82 /* KingfisherSwiftUI in Frameworks */,
+				FF8FF1F5256597150018AA82 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +150,11 @@
 			dependencies = (
 			);
 			name = "ios-sample-app";
+			packageProductDependencies = (
+				FF8FF1F4256597150018AA82 /* Kingfisher */,
+				FF8FF1F6256597150018AA82 /* KingfisherSwiftUI */,
+				FF8FF1FC256597830018AA82 /* SchibstedAccount */,
+			);
 			productName = "ios-sample-app";
 			productReference = FF8FF1B725658C140018AA82 /* ios-sample-app.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = FF8FF1AE25658C140018AA82;
+			packageReferences = (
+				FF8FF1F3256597150018AA82 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FF8FF1FB256597830018AA82 /* XCRemoteSwiftPackageReference "account-sdk-ios" */,
+			);
 			productRefGroup = FF8FF1B825658C140018AA82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +602,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF8FF1F3256597150018AA82 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+		FF8FF1FB256597830018AA82 /* XCRemoteSwiftPackageReference "account-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:schibsted/account-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF8FF1F4256597150018AA82 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8FF1F3256597150018AA82 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FF8FF1F6256597150018AA82 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8FF1F3256597150018AA82 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		FF8FF1FC256597830018AA82 /* SchibstedAccount */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8FF1FB256597830018AA82 /* XCRemoteSwiftPackageReference "account-sdk-ios" */;
+			productName = SchibstedAccount;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF8FF1AF25658C140018AA82 /* Project object */;
 }

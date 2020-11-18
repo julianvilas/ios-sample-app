@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SchibstedAccount",
+        "repositoryURL": "git@github.com:schibsted/account-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "54a875edbd0d9d915744ea31eaa34000fecd6bd2",
+          "version": "2.8.1"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "git@github.com:onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "0e548b700c7c123dd3b2ac776e90d63a540f084d",
+          "version": "5.15.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
