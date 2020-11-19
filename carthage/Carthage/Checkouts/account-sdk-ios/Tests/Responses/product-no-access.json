@@ -1,7 +1,0 @@
-{
-    "error": {
-        "code": 404,
-        "type": "ApiException",
-        "description": "No access to that product."
-    }
-}

@@ -1,2 +1,0 @@
-Example/ClientConfiguration.json
-Example/Info.plist
